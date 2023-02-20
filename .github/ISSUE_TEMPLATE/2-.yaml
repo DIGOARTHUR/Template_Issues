@@ -1,0 +1,27 @@
+
+## for more information about YAML Syntax
+#https://docs.github.com/pt/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+name: 'Feature Request - Icons'
+description: Missing a Project or Stack icon?
+
+body:
+  - type: dropdown
+    id: icons-type
+    attributes:
+      label: Which category is the icon related to?
+      options:
+        - Project
+        - Stack
+      multiple: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describes the icon. Example (- Games to represent projects in the area of ​​games, entertainment...)
+Organize each icon by topic.
+    validations:
+      required: true
+- type: markdown
+  attributes:
+    value: "Thanks for completing our form!"

@@ -18,10 +18,10 @@ body:
     id: description
     attributes:
       label: Description
-      description: Describes the icon. Example (- Games to represent projects in the area of ​​games, entertainment...)
-Organize each icon by topic.
+      description: Describes the icon. Example (- Games to represent projects in the area of ​​games, entertainment...) Organize each icon by topic.
     validations:
       required: true
-- type: markdown
-  attributes:
-    value: "Thanks for completing our form!"
+
+  - type: markdown
+    attributes:
+      value: "Thanks for completing our form!"

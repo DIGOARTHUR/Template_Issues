@@ -32,7 +32,7 @@ body:
       label: Description
       description: Describes what is missing. Example -
       placeholder: |
-        - Games: to represent projects in the area of ​​games, entertainment...                                                                
+        - Games: to represent projects in the area of ​games, entertainment...                                                                
         - Angular: is a stack icon, it represents Front-end Framework.
         - homepage: props for access the link project.
     validations:

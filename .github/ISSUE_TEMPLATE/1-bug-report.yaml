@@ -3,39 +3,18 @@ description: Report a bug in the Angular Framework
 
 body:
   - type: dropdown
-    id: affected-packages
+    id: affected-elements
     attributes:
-      label: Which @angular/* package(s) are the source of the bug?
+      label: Which element(s) are the source of the bug?
       options:
-        - animations
-        - bazel
-        - common
-        - compiler-cli
-        - compiler
-        - core
-        - elements
-        - forms
-        - language-service
-        - localize
-        - platform-browser-dynamic
-        - platform-browser
-        - platform-server
-        - router
-        - service-worker
-        - upgrade
-        - zone.js
+        - useGithubAutomatedRepos
+        - dataReposGithub
+        - ProjectIcon
+        - StackIcon
+        - IGithubRepos
         - Don't known / other
+        
       multiple: true
-    validations:
-      required: true
-
-  - type: dropdown
-    id: is-regression
-    attributes:
-      label: Is this a regression?
-      options:
-        - 'Yes'
-        - 'No'
     validations:
       required: true
 
@@ -46,10 +25,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: reproduction
-    attributes:
-      label: Please provide a link to a minimal reproduction of the bug
 
   - type: textarea
     id: exception-or-error

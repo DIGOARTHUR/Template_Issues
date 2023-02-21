@@ -1,27 +1,43 @@
 
 ## for more information about YAML Syntax
 #https://docs.github.com/pt/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
-name: 'Feature Request - Icons'
-description: Missing a Project or Stack icon?
+name: 'Feature Request'
+description: Missing a Project or Stack icon? Or any API props? Any other suggestion? Tell us which one is missing.
 
 body:
   - type: dropdown
     id: icons-type
     attributes:
-      label: Which category is the icon related to?
+      label: Which category is it related to?
       options:
-        - Project
-        - Stack
+        - API_Props
+        - Icons
+        - Other
       multiple: true
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: icons-type
+    attributes:
+      label: If an icon, what type?
+      description: You can select more than one type.
+      options:
+      - label: Project
+      - label: Stack
 
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Describes the icon. Example (- Games to represent projects in the area of ​​games, entertainment...) Organize each icon by topic.
+      description: Describes what is missing. Example -
+      placeholder: |
+        - Games: to represent projects in the area of ​​games, entertainment...                                                                
+        - Angular: is a stack icon, it represents Front-end Framework.
+        - homepage: props for access the link project.
     validations:
       required: true
 
   - type: markdown
     attributes:
-      value: "Thanks for completing our form!"
+      value: "Thank you so much for contributing to an ever-better lib!"

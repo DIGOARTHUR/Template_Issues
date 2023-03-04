@@ -11,20 +11,12 @@ body:
       label: Which category is it related to?
       options:
         - API_Props
-        - Icons
+        - Project Icons
+        - Stack Icons
         - Other
       multiple: true
     validations:
       required: true
-
-  - type: checkboxes
-    id: icons-type
-    attributes:
-      label: If an icon, what type?
-      description: You can select more than one type.
-      options:
-        - label: Project
-        - label: Stack
 
   - type: textarea
     id: description
